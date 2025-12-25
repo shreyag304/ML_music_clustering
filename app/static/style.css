@@ -603,7 +603,6 @@ header .subtitle {
     background: rgba(0, 212, 255, 0.2);
     transform: translateY(-2px);
 }
-
 /* ===================================================================
    CLUSTER DETAILS - HORIZONTAL BAR CHART INSTEAD OF RADAR
    =================================================================== */
@@ -874,79 +873,4 @@ header .subtitle {
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 700;
-}
-
-/* ===================================================================
-   FOOTER
-   =================================================================== */
-
-footer {
-    background: var(--glass-bg);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border-top: 1px solid var(--glass-border);
-    padding: var(--spacing-xl) 0;
-    margin-top: var(--spacing-2xl);
-    text-align: center;
-    box-shadow: 0 -4px 24px var(--glass-shadow);
-}
-
-footer p {
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-xs);
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all var(--transition-fast);
-}
-
-footer a:hover {
-    color: var(--accent-color);
-}
-
-/* ===================================================================
-   SCROLLBAR
-   =================================================================== */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--bg-dark-2);
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--accent-color) 100%);
-}
-
-/* ===================================================================
-   RESPONSIVE DESIGN
-   =================================================================== */
-
-@media (max-width: 768px) {
-    .features-grid,
-    .metrics-grid,
-    .cluster-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .song-item {
-        grid-template-columns: auto 1fr;
-    }
-    
-    .song-genre,
-    .song-distance {
-        grid-column: 2;
-    }
 }
